@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-9udq7j!mcq8b8#hx-2wa++m3gl73a5pr1^b$75-vgtkglcmz25
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -95,16 +95,16 @@ WSGI_APPLICATION = 'testproject.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'project1',
-        'USER': 'root',
-        'PASSWORD': '12345Bickey721@',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'project1',
+#         'USER': 'root',
+#         'PASSWORD': '12345Bickey721@',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#     }
+# }
 
 DATABASES = {
     'default': dj_database_url.config(default='sqlite:///db.sqlite3')
